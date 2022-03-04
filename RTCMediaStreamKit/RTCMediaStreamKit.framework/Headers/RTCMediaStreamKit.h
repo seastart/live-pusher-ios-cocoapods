@@ -34,35 +34,38 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - 初始化会话实例
 /// 初始化会话实例
 /// @param mediaConfig 配置参数
-/// 返回值：YES-成功，NO-失败
-- (BOOL)initializeWithConfig:(RTCMediaConfig *)mediaConfig;
-
-#pragma mark - 设置推流
-/// 设置推流
 /// @param pushUrl 推流地址
 /// 返回值：YES-成功，NO-失败
-- (BOOL)setStreamWithPushUrl:(NSString *)pushUrl;
+- (BOOL)initializeWithConfig:(RTCMediaConfig *)mediaConfig pushUrl:(NSString *)pushUrl;
 
-#pragma mark - 开启摄像头
-/// 开启摄像头
-/// @param displayView 渲染的目标组件
-- (void)onCameraViewWithDisplayView:(RTYUVPlayer *)displayView;
+#pragma mark - 加载预览
+/// 加载预览
+/// @param displayView 预览目标组件
+- (void)loadPreviewViewWithDisplayView:(RTYUVPlayer *)displayView;
 
-#pragma mark - 开启视频采集
-/// 开启视频采集
-- (void)startVideoCapture;
+#pragma mark - 开始推流
+/// 开始推流
+- (void)startPushStream;
 
-#pragma mark - 停止视频采集
-/// 停止视频采集
-- (void)stopVideoCapture;
+#pragma mark - 停止推流
+/// 停止推流
+- (void)stopPushStream;
 
-#pragma mark - 开始音频采集
-/// 开始音频采集
-- (void)startAudioCapture;
+#pragma mark - 开启视频推流
+/// 开启视频推流
+- (void)startVideoStream;
 
-#pragma mark - 停止音频采集
-/// 停止采集
-- (void)stoAudioCapture;
+#pragma mark - 停止视频推流
+/// 停止视频推流
+- (void)stopVideoStream;
+
+#pragma mark - 开始音频推流
+/// 开始音频推流
+- (void)startAudioStream;
+
+#pragma mark - 停止音频推流
+/// 停止音频推流
+- (void)stopAudioStream;
 
 #pragma mark 销毁释放RTC资源
 /// 销毁释放RTC资源
