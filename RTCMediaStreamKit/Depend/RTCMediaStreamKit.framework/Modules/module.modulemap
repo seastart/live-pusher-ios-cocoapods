@@ -1,0 +1,6 @@
+framework module RTCMediaStreamKit {
+  umbrella header "RTCMediaStreamKit.h"
+
+  export *
+  module * { export * }
+}
