@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) int vbirate;
 /// 音频采样率 默认48000
 @property (nonatomic, assign) int sampleRate;
+
+/// 设备方向 默认 UIInterfaceOrientationPortrait
+@property(nonatomic, assign) UIInterfaceOrientation orientation;
 
 @end
 

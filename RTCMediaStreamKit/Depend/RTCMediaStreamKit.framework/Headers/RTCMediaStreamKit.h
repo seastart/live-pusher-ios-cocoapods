@@ -73,6 +73,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 切换摄像头
 - (void)switchCamera;
 
+#pragma mark - 切换屏幕方向
+/// 切换屏幕方向
+/// @param orientation 预览画面方向
+/// @param previewSize 预览画面尺寸
+- (void)changeScreenOrientation:(UIInterfaceOrientation)orientation previewSize:(CGSize)previewSize;
+
 #pragma mark - 销毁释放RTC资源
 /// 销毁释放RTC资源
 - (void)destroy;
