@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RTCMediaStreamKit'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'RTC推流服务引擎.'
   
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,16 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
   
   # 依赖系统Frameworks库
-  s.ios.frameworks = 'QuartzCore', 'Foundation', 'CoreFoundation', 'Security', 'VideoToolbox', 'OpenGLES', 'Accelerate', 'CoreMedia', 'AVFoundation', 'CoreML'
+  s.ios.frameworks = 'QuartzCore', 'Foundation', 'CoreFoundation', 'Security', 'VideoToolbox', 'OpenGLES', 'Accelerate', 'CoreMedia', 'AVFoundation', 'CoreML', 'CoreGraphics', 'UIKit'
   # 依赖系统Librarie库
   s.ios.library = 'c++', 'z', 'iconv'
+
+  # 依赖本地资源选择器
+  s.dependency 'TZImagePickerController'
+  # 依赖动态响应链
+  s.dependency 'ReactiveObjC'
+  # 依赖二维码扫描(系统原生API封装库)
+  s.dependency 'LBXScan'
   
   # 依赖库文件
   s.vendored_frameworks = 'RTCMediaStreamKit/Depend/*.framework'

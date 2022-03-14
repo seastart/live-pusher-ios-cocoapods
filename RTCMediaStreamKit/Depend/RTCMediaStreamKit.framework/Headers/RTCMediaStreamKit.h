@@ -9,10 +9,12 @@
 
 #if __has_include(<RTCMediaStreamKit/RTCMediaStreamKit.h>)
 #import <RTCMediaStreamKit/RTCMediaBeautyKit.h>
+#import <RTCMediaStreamKit/RTCPushStreamKit.h>
 #import <RTCMediaStreamKit/RTCMediaObjects.h>
 #import <RTCMediaStreamKit/RTYUVPlayer.h>
 #else
 #import "RTCMediaBeautyKit.h"
+#import "RTCPushStreamKit.h"
 #import "RTCMediaObjects.h"
 #import "RTYUVPlayer.h"
 #endif
