@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/RTCMediaStreamKit.svg?style=flat)](https://cocoapods.org/pods/RTCMediaStreamKit)
 [![Platform](https://img.shields.io/cocoapods/p/RTCMediaStreamKit.svg?style=flat)](https://cocoapods.org/pods/RTCMediaStreamKit)
 
-#### RTC推流服务引擎
+#### RTC推流服务引擎.
 
 ## Example
 
