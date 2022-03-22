@@ -16,6 +16,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取实例对象
 + (RTCPushStreamKit *)shareInstance;
 
+#pragma mark - 推流UI版本
+///  推流UI版本
+- (NSString *)version;
+
+#pragma mark - 推流UI版本信息
+/// 推流UI版本信息
+- (NSString *)versionInfo;
+
 #pragma mark - 获取推流首页
 /// 获取推流首页
 /// @param authData 美颜密钥地址
