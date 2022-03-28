@@ -21,7 +21,24 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class RTCMediaStreamKit;
+
+#pragma mark - ----- 推流相关代理 -----
+@protocol RTCMediaStreamKitDelegate <NSObject>
+
+#pragma mark RTC推流状态回调
+/// RTC推流状态回调
+/// @param engine 推流实例
+/// @param result 推流结果
+- (void)rtcMediaStreamKit:(RTCMediaStreamKit *)engine result:(BOOL)result;
+
+@end
+
 @interface RTCMediaStreamKit : NSObject
+
+#pragma mark - 推流代理
+/// 推流代理
+@property (nonatomic, weak) id<RTCMediaStreamKitDelegate> delegate;
 
 #pragma mark - 获取实例对象
 /// 获取实例对象
@@ -39,8 +56,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 初始化会话实例
 /// @param mediaConfig 配置参数
 /// @param pushUrl 推流地址
+/// @param delegate 推流代理
 /// 返回值：YES-成功，NO-失败
-- (BOOL)initializeWithConfig:(RTCMediaConfig *)mediaConfig pushUrl:(NSString *)pushUrl;
+- (BOOL)initializeWithConfig:(RTCMediaConfig *)mediaConfig pushUrl:(NSString *)pushUrl delegate:(nullable id <RTCMediaStreamKitDelegate>)delegate;
 
 #pragma mark - 加载预览
 /// 加载预览
