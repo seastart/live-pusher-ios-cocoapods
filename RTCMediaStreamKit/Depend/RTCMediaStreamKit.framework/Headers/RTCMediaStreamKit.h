@@ -57,8 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param mediaConfig 配置参数
 /// @param pushUrl 推流地址
 /// @param delegate 推流代理
-/// 返回值：YES-成功，NO-失败
-- (BOOL)initializeWithConfig:(RTCMediaConfig *)mediaConfig pushUrl:(NSString *)pushUrl delegate:(nullable id <RTCMediaStreamKitDelegate>)delegate;
+- (void)initializeWithConfig:(RTCMediaConfig *)mediaConfig pushUrl:(NSString *)pushUrl delegate:(nullable id <RTCMediaStreamKitDelegate>)delegate;
 
 #pragma mark - 加载预览
 /// 加载预览
