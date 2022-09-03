@@ -18,8 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) int height;
 /// 帧率 默认25
 @property (nonatomic, assign) int fps;
-/// 码率 默认900*1024
-@property (nonatomic, assign) int vbirate;
+/// 码率 默认1.5，单位MB
+@property (nonatomic, assign) float bitrate;
 /// 音频采样率 默认48000
 @property (nonatomic, assign) int sampleRate;
 
