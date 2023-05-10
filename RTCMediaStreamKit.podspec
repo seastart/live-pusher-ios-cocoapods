@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RTCMediaStreamKit'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'RTC推流服务引擎.'
   
 # This description is used to generate tags and improve search results.
