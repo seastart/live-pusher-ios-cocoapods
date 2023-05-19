@@ -72,6 +72,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 停止推流
 - (void)stopPushStream;
 
+#pragma mark - 开启视频采集
+/// 开启视频采集
+- (void)startVideoCapture;
+
+#pragma mark - 停止视频采集
+/// 停止视频采集
+- (void)stopVideoCapture;
+
 #pragma mark - 开启视频推流
 /// 开启视频推流
 - (void)startVideoStream;
